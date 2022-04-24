@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object_in_js</title>
+</head>
+<body>
+
+    <script>
+ document.write("<h3> Creating an object in js </h3>");
+   var person={
+   
+    FirstName :"Abdhesh",
+     LastName:"Kushwaha ",
+     age: 30,
+    eyeColor:" brown" 
+                    } 
+document.write( "object details of person object : " +person.FirstName+" "  +person.LastName+ " " +person.age+" "+person.eyeColor);
+
+
+
+
+
+
+document.write("<br>")
+
+//   Creating an object using Object Constructor :
+     function employee(id,name,salary){
+         this.id= id;
+         this.name= name;
+         this.salary= salary;
+                               }
+var e= new employee(2,"aBdhesh",50000);
+ document.writeln("<br> Boject details of employ object :");
+ for(value in e){
+
+    document.writeln(e[value]+ " ");
+ }
+   
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
